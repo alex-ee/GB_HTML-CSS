@@ -19,7 +19,7 @@
                 <br>
                 <form method="POST" action="test.cgi">
                     <input type="text" placeholder="ФИО" name="fio"><br>
-                    <input type="text" placeholder="e-mail" name="email"><br>
+                    <input type="text" placeholder="e-mail" name="email" class="mail"><br>
                     <input type="text" placeholder="тема" name="subj"><br>
                     <textarea rows="10" cols="80" placeholder="сообщение" name="text"></textarea><br>
                     <input type="submit" value="Отправить"><br>
@@ -36,21 +36,24 @@
             
             </td>
             <td width=130px valign=top>
-                <ul class="menu">
-                    <li><a class="menu" href="index.html">Главная</a></li>
-                    <li><a class="menu" href="catalog.html">Каталог</a></li>
-                    <li>Контакты</li>
+                <div class="header">
+                    <img src="images/Cube.jpg"><br>
+                    <ul class="menu">
+                        <li><a class="menu" href="index.html">Главная</a></li>
+                        <li><a class="menu" href="catalog.html">Каталог</a></li>
+                        <li>Контакты</li>
 
-                </ul>
+                    </ul>
+                </div>
             </td>
         </tr>
 
     </table>
 
-    <footer><hr>
+    <div class="footer"><hr>
         Все права защищены &copy; 2016 <a href="mailto:alexey.gatchina@gmail.com">Ревягин Алексей</a> 
 
-    </footer>
+    </div>
 
 </body>
 </html>
