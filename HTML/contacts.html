@@ -1,59 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <title>На все случаи</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body>
-    <h1>"На все случаи"</h1>
-    <h5>онлайн - магазин</h5><hr>
-    <table border=0 width=98% height=750px align=center>
-        <tr>
-            <td valign=top>
-                <div class="welcome">Напишите нам</div>
-                <br>
-                <form method="POST" action="test.cgi">
-                    <input type="text" placeholder="ФИО" name="fio"><br>
-                    <input type="text" placeholder="e-mail" name="email" class="mail"><br>
-                    <input type="text" placeholder="тема" name="subj"><br>
-                    <textarea rows="10" cols="80" placeholder="сообщение" name="text"></textarea><br>
-                    <input type="submit" value="Отправить"><br>
-                </form>
+    <div class="container">
+        <h1>"На все случаи"</h1>
+        <h5>онлайн - магазин</h5><hr>
 
-                <p>
-                    Адрес:<br>
-                    Россия, г. Гатчина, ул. Неизвестная 5с<br>
-                    e-mail: <a href="mailto:unknown@random.com">unknown@random.com</a><br>
-                    
-                </p>
+        <div class="header">
+            <ul class="menu">
+                <li class="menu"><a class="menu" href="index.html">Главная</a></li>
+                <li class="menu"><a class="menu" href="catalog.html">Каталог</a></li>
+                <li class="menu">Контакты</li>
+            </ul>
+        </div>
+        <div class="welcome">Напишите нам</div>
+        
+        <form method="POST" action="test.cgi">
+            <input type="text" placeholder="ФИО" name="fio"><br>
+            <input type="text" placeholder="e-mail" name="email" class="mail"><br>
+            <input type="text" placeholder="тема" name="subj"><br>
+            <textarea rows="10" cols="80" placeholder="сообщение" name="text"></textarea><br>
+            <input type="submit" value="Отправить"><br>
+        </form>
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19227.069837163494!2d30.118895548453956!3d59.56646230052328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1472672235390" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p>
+            Адрес:<br>
+            Россия, г. Гатчина, ул. Неизвестная 5с<br>
+            e-mail: <a href="mailto:unknown@random.com">unknown@random.com</a><br>
             
-            </td>
-            <td width=130px valign=top>
-                <div class="header">
-                    <img src="images/Cube.jpg"><br>
-                    <ul class="menu">
-                        <li><a class="menu" href="index.html">Главная</a></li>
-                        <li><a class="menu" href="catalog.html">Каталог</a></li>
-                        <li>Контакты</li>
+        </p>
 
-                    </ul>
-                </div>
-            </td>
-        </tr>
-
-    </table>
-
-    <div class="footer"><hr>
-        Все права защищены &copy; 2016 <a href="mailto:alexey.gatchina@gmail.com">Ревягин Алексей</a> 
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19227.069837163494!2d30.118895548453956!3d59.56646230052328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1472672235390" width=100% height="450" frameborder="0" style="border:0" allowfullscreen class="mapa"></iframe>
+            
+        <div class="footer"><hr>
+            Все права защищены &copy; 2016 <a href="mailto:alexey.gatchina@gmail.com">Ревягин Алексей</a>&nbsp;
+        </div>
     </div>
-
 </body>
 </html>

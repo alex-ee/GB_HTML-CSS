@@ -1,5 +1,5 @@
 body {
-   background-color: #f8f8f8;
+    margin: 0;
 }
 
 h1 {
@@ -14,6 +14,11 @@ h5 {
 .welcome {
     font-size: 26px;
     text-align: center;
+    height: 50px;
+}
+
+.welcome_tovar {
+    font-size: 20px;
 }
 
 a.menu {
@@ -33,11 +38,25 @@ a.tovar {
 
 ul.menu {
     list-style: none;
-    text-align: left;
+    display: inline-block;
+    background-image: url(../images/Cube.jpg);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    height: 48px;
+    margin: 10px;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+li.menu {
+    display: inline-block;
+    margin: 12px;
 }
 
 div.header {
-    text-align: center;
+    text-align: right;
+    float: right;
+    height: 50px;
 }
 
 img.kratko {
@@ -70,6 +89,7 @@ img.podrobno:hover {
     font-weight: 400;
     background-color: #eaeaea;
     text-align: center;
+    margin-top: 0;
 }
 
 .opis_tovar.kratko {
@@ -82,7 +102,7 @@ img.podrobno:hover {
 table.opis_tovar.kratko {
     background-color: #eaeaea;
     width: 100%;
-    text-align: center; 
+    text-align: center;
     border: 2px;
     border-color: lightgray;
     border-style: solid;
@@ -96,7 +116,6 @@ th.opis_tovar.kratko {
     background-color: #d8d8d8;
     font-style: normal;
     font-size: 16px;
-
 }
 
 .opis_tovar.podrobno {
@@ -126,6 +145,8 @@ ol {
 div.footer {
     text-align: right;
     font-size: 12px;
+    background-color: #eee;
+    height: 30px;
 }
 
 p.news {
@@ -160,3 +181,63 @@ input[type=text].mail:focus {
     text-align: center;
 }
 
+input[type=button].btn_buy:hover {
+    color: red;
+    background-position: 4px 4px;
+}
+
+input[type=button].btn_buy:focus {
+    color: blue;
+    background-position: 4px 4px;
+    background-color: #eee;
+}
+
+div.container {
+    background-color: #f8f8f8;
+}
+
+div.container:before {
+    content: "";
+    display: table;
+}
+
+div.container:after {
+    content: "";
+    display: table;
+}
+
+div.tovar {
+    display: inline-block;
+    width: 220px;
+    margin: 10px;
+}
+
+div.tovar1 {
+    display: flex;
+}
+
+div.tovar1.opis {
+    display: block;
+    width: 100%;
+}
+
+div.tovar.kratko {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+div.tovar.podrobno {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 170px;
+    float: left;
+}
+
+iframe.mapa {
+    width: 100%;
+    height: 374px;
+}
