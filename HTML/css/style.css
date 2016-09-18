@@ -1,7 +1,18 @@
+html {
+    height: 100%;
+}
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #444;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 140px;
+    box-sizing: border-box;
 }
 
+/*
 h1 {
     text-align: center;
 }
@@ -19,17 +30,6 @@ h5 {
 
 .welcome_tovar {
     font-size: 20px;
-}
-
-a.menu {
-    text-decoration: unset;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: green;
-}
-
-a.menu:hover {
-    color: purple;
 }
 
 a.tovar {
@@ -166,46 +166,6 @@ p.news {
     text-align: right;
 }
 
-input[type=text] {
-    width: 300px;
-    height: 20px;
-    text-align: left;
-    font-size: 14px;
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    color: darkblue;
-}
-
-input[type=text].mail:focus {
-    color: red;
-    background-color: black;
-    text-align: center;
-}
-
-input[type=button].btn_buy:hover {
-    color: red;
-    background-position: 4px 4px;
-}
-
-input[type=button].btn_buy:focus {
-    color: blue;
-    background-position: 4px 4px;
-    background-color: #eee;
-}
-
-div.container {
-    background-color: #f8f8f8;
-}
-
-div.container:before {
-    content: "";
-    display: table;
-}
-
-div.container:after {
-    content: "";
-    display: table;
-}
-
 div.tovar {
     display: inline-block;
     width: 220px;
@@ -237,7 +197,178 @@ div.tovar.podrobno {
     float: left;
 }
 
+*/
+div.container {
+    background-color: #fff;
+    width: 100%;
+    padding: 0;
+}
+
+div.container:before {
+    content: "";
+    display: table;
+}
+
+div.container:after {
+    content: "";
+    display: table;
+}
+
+
+div.phone {
+    font-size: 11px;
+    margin-left: 11.5625%;
+    font-weight: 400;
+}
+div.topper {
+    background-color: #e6e9ed;
+    margin: 0;
+    height: 36px;
+    padding-top: 12px;
+}
+div.content {
+    margin: 0 11.5625% 0 11.5625%;
+}
+div.header {
+    height: 163px;
+    padding-top: 52px;
+}
+div.logo {
+    text-align: left;
+    float: left;
+}
+div.menu {
+    height: 52px;
+    background-color: #f5f7f9;
+    float: left;
+    padding: 0;
+}
+div.menu_text {
+    padding: 18px;
+    float: inherit;
+    font-size: 14px;
+    background-color: inherit;
+    height: inherit;
+}
+div.menu_text:hover {
+    text-shadow: black;
+    border: lightgray solid 1px;
+    padding: 17px;
+}
+div.menu_text.active {
+    background-color: #59b7c2;
+}
+div.news {
+    background-color: #f5f7f9;
+    padding: 18px 18px 5px;
+}
+div.news_top {
+    font-size: 18px;
+    margin: 0 0 13px 0;
+}
+div.news_date {
+    font-size: 11px;
+    font-style: italic;
+    color: #828282;
+    margin: 13px 0 0 0;
+}
+div.news_text {
+    color: #2e8f9a;
+    font-size: 12px;
+    margin: 0 0 13px 0;
+}
+div.footer {
+    background-color: #e6e9ed;
+    height: 70px;
+    padding: 29px 11.5625% 0 11.5625%;
+    color: #828282;
+    font-size: 11px;
+    float: left;
+    width: 100%;
+    margin-top: 70px;
+    position: absolute;
+    bottom: 0;
+}
+a.menu_text {
+    color: inherit;
+}
+a.menu_text:hover {
+    color: #2e8f9a;
+    text-decoration: unset;
+}
+div.products {
+    padding: 0 0 10px;
+    font-size: 24px;
+    border-bottom: lightgray solid 1px;
+}
+div.tovar{
+    margin: 11px 0 0 0; 
+    border: #e0e0e0 solid 1px;
+    height: 276px;
+}
+div.img_catalog {
+    background-color: #f5f7f9;
+    margin: 10px;
+    text-align: center;
+    height: 180px;
+    padding-top: 16px;
+}
+img.img_catalog {
+    height: 150px;
+    width: 150px;
+}
+div.tovar_text {
+    font-size: 13px;
+    color: #777777;
+    margin: 11px;
+    font-weight: 400;
+}
+div.tovar_price {
+    height: 44px;
+    border: #e0e0e0 solid 1px;
+    float: left;
+    width: 60%;
+    text-align: center;
+    font-size: 12px;
+    padding: 14px 0;
+    color: #2e8f9a;
+}
+div.tovar_buy {
+    height: 44px;
+    border: #e0e0e0 solid 1px;
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+input[type=button].btn_buy {
+    background-color: #e0e0e0;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #47a9b4;
+}
+input[type=button].btn_buy:hover {
+    color: red;
+    background-position: 4px 4px;
+}
+input[type=button].btn_buy:active {
+    color: blue;
+    background-position: 4px 4px;
+    background-color: #eee;
+}
+input[type=text].mail:focus {
+    color: red;
+    background-color: black;
+    text-align: center;
+}
 iframe.mapa {
     width: 100%;
     height: 374px;
+}
+div.form {
+    margin: 33px 11px 11px;
+}
+div.address {
+    margin: 33px 11px;
 }
